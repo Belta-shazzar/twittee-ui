@@ -1,28 +1,30 @@
 <template>
   <div class="home">
-      <HomePage />
+    <div class="home-container">
+      <SideBar />
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HomePage from '@/components/Pages/HomePage.vue'
-
+import SideBar from '@/components/Base/SideBar'
 
 export default {
-  name: 'Home',
-  components: {
-    HomePage,
-  }
+    name: 'HomeLayout',
+    components: {
+        SideBar
+    }
 }
 </script>
 
 <style scoped>
-/* .home {
+.home {
   display: block;
   margin: 0 auto;
   background-color: red;
   height: 100vh;
-  /* padding: 10px; 
+  /* padding: 10px; */
   overflow-y: hidden;
 }
 
@@ -32,6 +34,5 @@ export default {
   display: flex;
   justify-content: space-evenly;
   height: 100vh;
-} */
-
+}
 </style>

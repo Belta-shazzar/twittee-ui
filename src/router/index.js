@@ -8,36 +8,49 @@ const routes = [
     path: '',
     name: '',
     component: HomeLayout,
+    redirect: '/home',
     children: [
       {
         path: '/home',
         name: 'Home',
-        component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
+        component: () => import('../views/Home.vue'),
       },
 
       {
         path: '/twits',
         name: 'Twits',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Twits.vue'),
+        component: () => import('../views/Twits.vue'),
       },
 
       {
         path: '/bookmarks',
         name: 'Bookmarks',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Bookmarks.vue'),
+        component: () => import('../views/Bookmarks.vue'),
       },
       {
         path: '/notifications',
         name: 'Notification',
-        component: () => import(/* webpackChunkName: "about" */ '../views/Notification.vue'),
-      }
+        component: () => import('../views/Notification.vue'),
+      },
+      {
+        path: '/profile/:id',
+        name: 'Profile',
+        component: () => import('../views/Profile.vue'),
+      },
+
+      {
+        path: '/profile/edit/:id',
+        name: 'EditProfile',
+        component: () => import('../views/EditProfile.vue'),
+      },
+      
     ]
   },
 
   {
     path: '/signup',
     name: 'Signup',
-    component: () => import(/* webpackChunkName: "signup" */ '../views/Auth/Signup.vue')
+    component: () => import('../views/Auth/Signup.vue')
   },
 
   {

@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <BookmarksPage
- />
+    <BookmarksPage />
   </div>
 </template>
 

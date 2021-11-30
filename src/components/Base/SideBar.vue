@@ -44,9 +44,11 @@
                         Messages
                     </li>
 
-                    <li>
-                        <font-awesome-icon :icon="profileIcon" />
-                        Profile
+                    <li :class="toggleActiveClass(`/profile/10`)">
+                        <router-link to="/profile/10">
+                            <font-awesome-icon :icon="profileIcon" />
+                            Profile
+                        </router-link>
                     </li>
 
                     <li>
@@ -109,10 +111,8 @@ export default {
             settingIcon: faCog,
             bookmarkIcon: faBookmark,
             notifIcon: faBell,
-            logoutIcon: faSignOutAlt
-
-
-
+            logoutIcon: faSignOutAlt,
+            // userId: 10
         }
     },
 

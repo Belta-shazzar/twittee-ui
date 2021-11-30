@@ -139,11 +139,10 @@ section h4 {
     text-decoration: none;
     line-height: 20px;
     text-align: center;
-    background-color: rgba(248, 244, 244, 0.878);
+    background-color: rgba(95, 92, 92, 0.878);
     margin: 15px auto;
     width: 100%;
-    color: #333
-;
+    color: white;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
@@ -199,10 +198,10 @@ form button {
 
 form button:hover {
     text-align: center;
-    background-color: rgba(248, 244, 244, 0.878);
+    background-color: rgba(95, 92, 92, 0.878);
     margin: 15px auto;
     width: 100%;
-    color: #333;
+    color: white;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
